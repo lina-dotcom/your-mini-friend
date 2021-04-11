@@ -185,6 +185,67 @@ object BotResponse {
                     else -> "error"
                 }
             }
+            
+            message.contains("resource") || message.contains ("hotline") -> {
+                return ("Global\n" +
+                        "http://www.yourlifecounts.org/need-help/crisis-lines\n" +
+                        "https://www.imalive.org/\n" +
+                        "https://www.lifeline.org.au/About-Lifeline/Lifeline-International/Looking-for-Help/Looking-for-Help\n" +
+                        "\n" +
+                        "USA:\n" +
+                        "1-800-273-8255 - HopeLine\n" +
+                        "https://www.nami.org/Home\n" +
+                        "https://www.imalive.org/\n" +
+                        "\n" +
+                        "Canada:\n" +
+                        "1-833-456-4566 - Crisis Services Canada\n" +
+                        "https://cmha.ca/\n" +
+                        "https://kidshelpphone.ca/\n" +
+                        "\n" +
+                        "Australia:\n" +
+                        "13 11 14 - Lineline Australia\n" +
+                        "https://www.yourhealthinmind.org/\n" +
+                        "http://www.kidshelp.com.au/\n" +
+                        "\n" +
+                        "UK & ROI\n" +
+                        "116 123 - Samaritans\n" +
+                        "http://www.mentalhealth.org.uk/\n" +
+                        "http://www.together-uk.org/\n" +
+                        "\n" +
+                        "New Zealand\n" +
+                        "0800 543 354 - Lifeline New Zealand\n" +
+                        "https://www.mentalhealth.org.nz/\n" +
+                        "http://www.hdc.org.nz/about-us/mental-health-and-addictions/help-and-support/getting-help\n" +
+                        "\n" +
+                        "France\n" +
+                        "0033 145 39 4000 - Suicide Ecoute\n" +
+                        "http://www.eufami.org/\n" +
+                        "http://www.euro.who.int/en/health-topics/noncommunicable-diseases/mental-health\n" +
+                        "\n" +
+                        "Germany\n" +
+                        "030-44 01 06 07 - English \n" +
+                        "0800 -111 0 222 - German\n" +
+                        "http://www.eufami.org/\n" +
+                        "http://www.euro.who.int/en/health-topics/noncommunicable-diseases/mental-health\n" +
+                        "\n" +
+                        "Italy\n" +
+                        "800 86 00 22 - Samaritans\n" +
+                        "http://www.eufami.org/\n" +
+                        "http://www.euro.who.int/en/health-topics/noncommunicable-diseases/mental-health\n" +
+                        "\n" +
+                        "South Africa \n" +
+                        "0861 322 322 - Lifeline Southern Africa\n" +
+                        "http://www.safmh.org.za/\n" +
+                        "http://mentalhealthsa.org.za/\n" +
+                        "\n" +
+                        "Japan\n" +
+                        "+81 (0) 3 5286 9090 - Befrienders International, Tokyo\n" +
+                        "107-0062 - Tokyo English Lifeline\n" +
+                        "http://utsu.ne.jp/\n" +
+                        "https://www.cocoro-h.jp/\n" +
+                        "\n" +
+                        "From https://checkpointorg.com/global/\n")
+            }
 
             /*message.contains("fact") -> {
                 when((0..).random()) {
