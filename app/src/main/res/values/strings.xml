@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">your mini friend</string>
+    <string name="choose_your_mood">how are you feeling today?</string>
+    <string name="lonely_mood">lonely</string>
+    <string name="tired_mood">tired</string>
+    <string name="angry_mood">angry</string>
+    <string name="sad_mood">sad</string>
+    <string name="numb_mood">numb</string>
+    <string name="stressed_mood">stressed</string>
+    <string name="okay_mood">okay</string>
+    <string name="relaxed_mood">relaxed</string>
+    <string name="excited_mood">excited</string>
+    <string name="hopeful_mood">hopeful</string>
+    <string name="happy_mood">happy</string>
+    <string name="joyful_mood">joyful</string>
+    <string name="saved">mood saved</string>
+    <string name="updated">mood updated</string>
+    <string name="mood_list">mood list</string>
+    <string name="mood">mood</string>
+
+    <string name="lonely_mood_update">I felt lonely.</string>
+    <string name="tired_mood_update">I felt tired.</string>
+    <string name="angry_mood_update">I felt angry.</string>
+    <string name="sad_mood_update">I felt sad.</string>
+    <string name="numb_mood_update">I felt numb.</string>
+    <string name="stressed_mood_update">I felt stressed.</string>
+    <string name="okay_mood_update">I felt okay.</string>
+    <string name="relaxed_mood_update">I felt relaxed.</string>
+    <string name="excited_mood_update">I felt excited.</string>
+    <string name="hopeful_mood_update">I felt hopeful.</string>
+    <string name="happy_mood_update">I felt happy.</string>
+    <string name="joyful_mood_update">I felt joyful.</string>
+    <string name="i_felt">I felt...</string>
+</resources>

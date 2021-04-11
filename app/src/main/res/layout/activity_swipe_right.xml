@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".SwipeRight">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="100dp"
+            android:textColor="#54694d"
+            android:text="@string/choose_your_mood"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/lonely_mood"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/lonely_mood"
+            style="@style/MoodButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#758a6e"
+            android:background="@drawable/selector_mood"
+            android:text="@string/lonely_mood"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/sad_mood"
+            app:layout_constraintBottom_toBottomOf="@+id/tired_mood"
+            app:layout_constraintEnd_toStartOf="@+id/tired_mood"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/tired_mood"
+            style="@style/MoodButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#758a6e"
+            android:background="@drawable/selector_mood"
+            android:text="@string/tired_mood"
+            app:layout_constraintBottom_toBottomOf="@+id/lonely_mood"
+            app:layout_constraintEnd_toStartOf="@+id/angry_mood"
+            app:layout_constraintStart_toEndOf="@+id/lonely_mood"
+            app:layout_constraintTop_toTopOf="@+id/lonely_mood"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/angry_mood"
+            style="@style/MoodButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#758a6e"
+            android:background="@drawable/selector_mood"
+            android:text="@string/angry_mood"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/tired_mood"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tired_mood"
+            app:layout_constraintTop_toTopOf="@+id/tired_mood"
+            app:layout_constraintBottom_toTopOf="@+id/stressed_mood"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/okay_mood"
+            style="@style/MoodButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom= "0dp"
+            android:textColor="#758a6e"
+            android:background="@drawable/selector_mood"
+            android:text="@string/okay_mood"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/relaxed_mood"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/relaxed_mood"
+            app:layout_constraintTop_toBottomOf="@+id/sad_mood" />
+
+        <Button
+            android:id="@+id/relaxed_mood"
+            style="@style/MoodButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="#758a6e"
+            android:background="@drawable/selector_mood"
+            android:text="@string/relaxed_mood"
+            app:layout_constraintEnd_toEndOf="@+id/tired_mood"
+            app:layout_constraintEnd_toStartOf="@+id/excited_mood"
+            app:layout_constraintHorizontal_bias="0.311"
+            app:layout_constraintStart_toEndOf="@+id/okay_mood"
+            app:layout_constraintTop_toBottomOf="@+id/numb_mood" />
+
+        <Button
+            android:id="@+id/excited_mood"
+            style="@style/MoodButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="#758a6e"
+            android:background="@drawable/selector_mood"
+            android:text="@string/excited_mood"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/relaxed_mood"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/relaxed_mood"
+            app:layout_constraintTop_toTopOf="@+id/relaxed_mood"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/sad_mood"
+            style="@style/MoodButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom= "0dp"
+            android:textColor="#758a6e"
+            android:background="@drawable/selector_mood"
+            android:text="@string/sad_mood"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/numb_mood"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/numb_mood"
+            app:layout_constraintTop_toBottomOf="@+id/lonely_mood" />
+
+        <Button
+            android:id="@+id/numb_mood"
+            style="@style/MoodButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="#758a6e"
+            android:background="@drawable/selector_mood"
+            android:text="@string/numb_mood"
+            app:layout_constraintEnd_toEndOf="@+id/tired_mood"
+            app:layout_constraintEnd_toStartOf="@+id/stressed_mood"
+            app:layout_constraintHorizontal_bias="0.311"
+            app:layout_constraintStart_toEndOf="@+id/sad_mood"
+            app:layout_constraintTop_toBottomOf="@+id/tired_mood" />
+
+        <Button
+            android:id="@+id/stressed_mood"
+            style="@style/MoodButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="#758a6e"
+            android:background="@drawable/selector_mood"
+            android:text="@string/stressed_mood"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/numb_mood"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/numb_mood"
+            app:layout_constraintTop_toTopOf="@+id/numb_mood"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/hopeful_mood"
+            style="@style/MoodButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom= "0dp"
+            android:textColor="#758a6e"
+            android:background="@drawable/selector_mood"
+            android:text="@string/hopeful_mood"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/happy_mood"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/happy_mood"
+            app:layout_constraintTop_toBottomOf="@+id/okay_mood" />
+
+        <Button
+            android:id="@+id/happy_mood"
+            style="@style/MoodButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="#758a6e"
+            android:background="@drawable/selector_mood"
+            android:text="@string/happy_mood"
+            app:layout_constraintEnd_toEndOf="@+id/relaxed_mood"
+            app:layout_constraintEnd_toStartOf="@+id/joyful_mood"
+            app:layout_constraintHorizontal_bias="0.311"
+            app:layout_constraintStart_toEndOf="@+id/hopeful_mood"
+            app:layout_constraintTop_toBottomOf="@+id/relaxed_mood" />
+
+        <Button
+            android:id="@+id/joyful_mood"
+            style="@style/MoodButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="#758a6e"
+            android:background="@drawable/selector_mood"
+            android:text="@string/joyful_mood"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/happy_mood"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/happy_mood"
+            app:layout_constraintTop_toTopOf="@+id/happy_mood"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="622dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
